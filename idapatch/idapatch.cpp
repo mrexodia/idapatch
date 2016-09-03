@@ -129,7 +129,7 @@ static void idapatch(const wchar_t* patchIni)
             patch.module = "wll";
         if(enabled == "0")
         {
-            dprintf("%s disabled...", patch.name.c_str());
+            dprintf("%s disabled...\n", patch.name.c_str());
             continue;
         }
         if(!patterntransform(searchData, patch.search) || !patterntransform(patch.replace, patch.replaceTr))
